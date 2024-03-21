@@ -1,0 +1,20 @@
+@import '../utils/variables.scss';
+
+footer {
+    display: flex;
+    height: 39px;
+    // width:1728px;
+    justify-content: center;
+    background-color: $lilac;
+    gap: 31px;
+
+}
+
+footer>p {
+    width: 108px;
+    height: 18px;
+    top: 1089px;
+    left: 740px;
+    font-size: 12px;
+    color: $white;
+}
