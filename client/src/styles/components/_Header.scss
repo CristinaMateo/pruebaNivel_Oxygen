@@ -4,7 +4,7 @@
 header {
     box-shadow: #00000040 0px 2px 4px 0px;
     height: 48px;
-    //width: 1728px;
+    width: 100%;
 
     &>section {
         display: flex;
@@ -16,7 +16,7 @@ header {
             height: 32px;
         }
 
-        &>h1 {
+        &>h2 {
             font-family: P900;
             color: $lilac;
             width: 156px;

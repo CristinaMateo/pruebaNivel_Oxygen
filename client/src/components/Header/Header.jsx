@@ -5,7 +5,7 @@ const Header = () => {
     <header>
       <section>
       <img src="/assets/lilacE.png" alt="exchange-icon" />
-      <h1>unit converter</h1>
+      <h2>unit converter</h2>
       </section>
     </header>
   );
