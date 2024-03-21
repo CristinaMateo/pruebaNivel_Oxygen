@@ -2,25 +2,33 @@
 
 
 header {
-    display: flex;
-    align-items: center;
     box-shadow: #00000040 0px 2px 4px 0px;
     height: 48px;
     //width: 1728px;
 
-    &>img {
-        width: 32px;
-        height: 32px;
+    &>section {
+        display: flex;
+        align-items: center;
+        //margin-left: 529px;
+
+        &>img {
+            width: 32px;
+            height: 32px;
+        }
+
+        &>h1 {
+            font-family: P900;
+            color: $lilac;
+            width: 156px;
+            height: 31px;
+            font-size: 20px;
+            line-height: 30px;
+        }
     }
 
-    &>h1 {
-        font-family: P900;
-        color: $lilac;
-        width: 156px;
-        height: 31px;
-        font-size: 20px;
-        line-height: 30px;
-    }
+
+
+
 }
 
 @font-face {
