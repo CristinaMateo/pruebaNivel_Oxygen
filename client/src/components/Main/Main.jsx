@@ -1,11 +1,11 @@
 import React from "react";
-import Convertor from './Convertor';
+import Conversor from './Conversor';
 import Saved from './Saved';
 
 const Main = () => {
   return (
     <main>
-      <Convertor />
+      <Conversor />
       <Saved />
     </main>
   );

@@ -1,11 +1,13 @@
 import React from "react";
+import { useSelector, useDispatch } from 'react-redux';
+import { convert } from '../../../redux/slices/conversorSlices'
 
 const Convertor = () => {
   return (
     <article id="convertor">
       <h1>convert</h1>
       <section id="petition">
-        <select name="convertor" id="units">
+        <select name="conversor" id="units">
           <option value="km-miles">km &rarr; miles</option>
           <option value="miles-km">miles &rarr; km</option>
           <option value="FT-m">FT &rarr; m</option>
