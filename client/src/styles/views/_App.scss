@@ -1,0 +1,17 @@
+@import '../utils/variables.scss';
+
+#root {
+    text-align: center;
+    margin: 10px auto;
+   /* width: 1728px;
+    height: 1117px; */ 
+    min-height: 100vh;
+    font-size: 14px;
+    padding: 2rem;
+    font-family: Poppins;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-Regular.ttf");
+}
