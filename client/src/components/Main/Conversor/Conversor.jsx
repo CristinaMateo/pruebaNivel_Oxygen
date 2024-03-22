@@ -1,10 +1,10 @@
 import React from "react";
-import { useSelector, useDispatch } from 'react-redux';
-import { convert } from '../../../redux/slices/conversorSlices'
+/* import { useSelector, useDispatch } from 'react-redux';
+import { convert } from '../../../redux/slices/conversorSlices' */
 
 const Convertor = () => {
   return (
-    <article id="convertor">
+    <article id="conversor">
       <h1>convert</h1>
       <section id="petition">
         <select name="conversor" id="units">

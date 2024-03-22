@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+/* import { createSlice } from '@reduxjs/toolkit'
 
 
 const factors = {
@@ -26,4 +26,4 @@ export const conversorSlice = createSlice({
 // Action creators are generated for each case reducer function
 export const { convert } = conversorSlice.actions
 
-export default conversorSlice.reducer
+export default conversorSlice.reducer */
