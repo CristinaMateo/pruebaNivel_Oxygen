@@ -9,7 +9,7 @@ l2 varchar (10) NOT NULL
 
 
 --GET todos
-SELECT nr1, l1, nr2, l2 
+SELECT * 
 FROM saved;
 
 

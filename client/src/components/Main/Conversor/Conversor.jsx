@@ -3,6 +3,11 @@ import React from "react";
 import { convert } from '../../../redux/slices/conversorSlices' */
 
 const Convertor = () => {
+
+  const saveConversion = ()=>{
+    console.log("Saved")
+  }
+
   return (
     <article id="conversor">
       <h1>convert</h1>
@@ -23,7 +28,7 @@ const Convertor = () => {
       </section>
 
       <section id="answer">
-        <img src="/assets/heart.png" alt="heart icon" />
+        <img src="/assets/heart.png" alt="heart icon" onClick={saveConversion}/>
         <h2>Resultado de la conversión</h2>
         <p>poner segunda parte de values</p>
       </section>
