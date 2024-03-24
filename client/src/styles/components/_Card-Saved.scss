@@ -1,15 +1,15 @@
 @import '../utils/variables.scss';
 
-#savedList{
+#savedList {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 16px;
     grid-row-gap: 21px;
-    width: 714px;
-    margin-left: 529px;
+    width: 717px;
+
 }
 
-.card{
+.card {
     display: flex;
     width: 349px;
     height: 38px;
@@ -22,7 +22,7 @@
     box-shadow: #0000001A 0px 0px 2px 2px;
 }
 
-#saved-section > h5 {
+#saved-section>h5 {
     font-family: P700;
     font-size: 16px;
     color: $grey;
@@ -30,18 +30,33 @@
     height: 26px;
     margin-bottom: 21px;
     margin-top: 87px;
-    margin-left: 529px;
     text-align: start;
 }
 
-.saved-card{
+.saved-card {
     margin-left: 18px;
 }
 
-.cross{
+.cross {
     margin-right: 4px;
 }
 
-#saved-section{
+#saved-section {
     margin-bottom: 436px;
+    margin-left: 36%;
+}
+
+
+@media screen and (max-width: 395px) {
+    #savedList {
+        grid-template-columns: 1fr;
+        width: 349px;
+        margin-bottom: 230px;
+    }
+
+    #saved-section {
+        
+        margin: auto;
+        width: 349px;
+    }
 }
