@@ -25,13 +25,14 @@ header {
             line-height: 30px;
         }
     }
+}
 
 
-
-
+@media screen and (max-width: 390px) {
+   
 }
 
 @font-face {
     font-family: "P900";
-    src: url("fonts/Poppins-Black.ttf");
+    src: url("/src/public/fonts/Poppins-Black.ttf");
 }
