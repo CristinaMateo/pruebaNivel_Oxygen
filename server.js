@@ -11,7 +11,7 @@ app.use(cors({origin:'*'}))
 
 //middelwares
 const error404 = require('./middlewares/error404.js')
-const morgan = require('./middlewares/morgan')
+const morgan = require('./middlewares/morgan.js')
 
 // Logger
 app.use(morgan(':method :host :status :param[id] - :response-time ms :body'));
