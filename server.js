@@ -20,7 +20,7 @@ app.use(morgan(':method :host :status :param[id] - :response-time ms :body'));
 //rutas
 const conversionRoutes = require("./routes/conversion.routes.js");
 
-//app.use('/api', conversionRoutes);
+app.use('/api', conversionRoutes);
 
 
 if (process.env.NODE_ENV === 'production') {
