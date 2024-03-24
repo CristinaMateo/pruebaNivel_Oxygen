@@ -17,7 +17,6 @@
   "author": "Cristina Mateo",
   "license": "ISC",
   "devDependencies": {
-    "morgan": "^1.10.0",
     "nodemon": "^3.1.0"
   },
   "dependencies": {
@@ -27,6 +26,7 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.0",
     "mongodb": "^6.5.0",
+    "morgan": "^1.10.0",
     "node-fetch": "^3.3.2",
     "pg": "^8.11.3"
   }
