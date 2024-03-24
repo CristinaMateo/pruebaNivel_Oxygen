@@ -1,4 +1,4 @@
-/* import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
 
 
 const factors = {
@@ -17,7 +17,9 @@ export const conversorSlice = createSlice({
   },
   reducers: {
     convert: (state, action) => {
-      state.value = action.payload.input*factors[action.payload.option]
+      console.log(action)
+      state.value = (action.payload.input*factors[action.payload.option]).toFixed(2)
+      
     },
     
   },
@@ -26,4 +28,4 @@ export const conversorSlice = createSlice({
 // Action creators are generated for each case reducer function
 export const { convert } = conversorSlice.actions
 
-export default conversorSlice.reducer */
+export default conversorSlice.reducer 
