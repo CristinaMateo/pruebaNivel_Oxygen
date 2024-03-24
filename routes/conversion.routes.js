@@ -2,8 +2,8 @@ const express = require('express');
 const convController = require("../controllers/conv.controller");
 const convRouter = express.Router();
 
-convController.get("/saved", convController.getSavedConversions)
-convController.post("/saved", convController.newConversion)
-convController.delete("/saved/:name", convController.deleteOneConversion)
+convRouter.get("/saved", convController.savedConversions)
+convRouter.post("/saved", convController.newConversion)
+convRouter.delete("/saved/:id", convController.deleteOneConversion)
 
 module.exports = convRouter;

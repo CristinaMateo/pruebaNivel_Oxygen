@@ -1,7 +1,7 @@
 const conversion = require('../models/conv.model')
 
 
-const getSavedConversions = async (req, res) => {
+const savedConversions = async (req, res) => {
     let saved;
     try {
         saved = await conversion.getAllSaved();
@@ -42,4 +42,11 @@ const deleteOneConversion = async (req, res) => {
             msg: "Error deleting saved conversion"
         })
     }
+}
+
+
+module.exports={
+    savedConversions,
+    newConversion,
+    deleteOneConversion
 }
