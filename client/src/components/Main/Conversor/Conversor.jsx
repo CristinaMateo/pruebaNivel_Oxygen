@@ -29,11 +29,11 @@ const Convertor = () => {
       
     try{
       await axios.post('http://localhost:3000/api/saved', Save);
-
+      location.reload()
     } catch (error){
       console.error(error)
     }
-
+    
   }
 
 

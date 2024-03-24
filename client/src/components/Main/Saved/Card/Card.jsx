@@ -9,7 +9,7 @@ const Card = ({ saved }) => {
  const deleteSaved= async (e) => {
     e.preventDefault()
     await axios.delete(`http://localhost:3000/api/saved/${saved.id}`)
-    
+    location.reload()
   } 
 
 
