@@ -15,8 +15,8 @@ const Card = ({ saved }) => {
 
   return (
     <article className="card" key={saved.id} id={saved.id}>
-      <p>{saved.nr1} {saved.l1} &rarr; {saved.nr2} {saved.l2}</p>
-      <img src="/assets/union.png" alt="cross" onClick={deleteSaved}/>
+      <p className="saved-card">{saved.nr1} {saved.l1} &rarr; {saved.nr2} {saved.l2}</p>
+      <img src="/assets/union.png" alt="cross" className="cross" onClick={deleteSaved}/>
     </article>
   );
 };

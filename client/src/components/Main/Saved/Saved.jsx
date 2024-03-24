@@ -5,7 +5,10 @@ const Saved = ({ savedList }) => {
 
   
   return (
-    <article className="savedList">
+
+    <section id="saved-section">
+      <h5>saved</h5>
+    <article id="savedList">
       {savedList && savedList.length > 0 ? (savedList.map((saved, index) =>(
         <Card key={index} saved={saved} />
       ))
@@ -13,6 +16,7 @@ const Saved = ({ savedList }) => {
         <p>No saved elements.</p>
       )}
     </article>
+    </section>
   );
 };
 
