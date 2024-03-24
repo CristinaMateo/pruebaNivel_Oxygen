@@ -17,7 +17,6 @@ export const conversorSlice = createSlice({
   },
   reducers: {
     convert: (state, action) => {
-      console.log(action)
       state.value = (action.payload.input*factors[action.payload.option]).toFixed(2)
       
     },

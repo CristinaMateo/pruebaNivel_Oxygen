@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
 import { convert } from '../../../redux/slices/conversorSlices'
 
@@ -7,6 +8,7 @@ const Convertor = () => {
   const [unit, setUnit] = useState("km");
   const [secUnit, setSecUnit] = useState("miles")
   const [factor, setFactor] = useState("km-miles")
+  const [input, setInput] = useState("0")
 
   const changeUnits = (event) => {
     let units = event.target.value.split("-")
@@ -14,11 +16,24 @@ const Convertor = () => {
     setSecUnit(units[1])
     setFactor(event.target.value)
   }
-  const count = useSelector((state) => state.conversor.value)
+  const result = useSelector((state) => state.conversor.value)
   const dispatch = useDispatch()
 
-  const saveConversion = () => {
-    console.log("Saved")
+  const saveConversion = async() => {
+    const Save={
+      nr1:input, 
+      l1:unit, 
+      nr2:result, 
+      l2:secUnit  
+    }
+      
+    try{
+      await axios.post('http://localhost:3000/api/saved', Save);
+
+    } catch (error){
+      console.error(error)
+    }
+
   }
 
 
@@ -38,6 +53,7 @@ const Convertor = () => {
         <img src="/assets/whiteE.png" alt="white Exchange icon" />
 
         <input type="float" onChange={(e) => {
+          setInput(e.target.value)
           dispatch(convert({
             input: Number(e.target.value),
             option: factor
@@ -48,7 +64,7 @@ const Convertor = () => {
 
       <section id="answer">
         <img src="/assets/heart.png" alt="heart icon" onClick={saveConversion} />
-        <h2>{count}</h2>
+        <h2>{result}</h2>
         <p>{secUnit}</p>
       </section>
     </article>
