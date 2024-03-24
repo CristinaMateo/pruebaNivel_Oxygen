@@ -6,11 +6,13 @@ const Convertor = () => {
 
   const [unit, setUnit] = useState("km");
   const [secUnit, setSecUnit] = useState("miles")
+  const [factor, setFactor] = useState("km-miles")
 
   const changeUnits = (event) => {
     let units = event.target.value.split("-")
     setUnit(units[0])
     setSecUnit(units[1])
+    setFactor(event.target.value)
   }
   const count = useSelector((state) => state.conversor.value)
   const dispatch = useDispatch()
@@ -38,7 +40,7 @@ const Convertor = () => {
         <input type="float" onChange={(e) => {
           dispatch(convert({
             input: Number(e.target.value),
-            option: "km-miles"
+            option: factor
           }))
         }} />
         <span>{unit}</span>
