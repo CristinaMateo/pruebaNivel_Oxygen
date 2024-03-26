@@ -10,8 +10,8 @@ header {
     &>section {
         display: flex;
         align-items: center;
-        margin-left: 36%;
-        
+        margin-left: 30%;
+
 
         &>img {
             width: 32px;
@@ -30,12 +30,17 @@ header {
 }
 
 
-@media screen and (max-width: 460px) {
-   header>section{
-        margin-left: 10px;
+@media screen and (max-width: 750px) {
+    header {
+        margin-bottom: 23px;
+
+        &>section {
+            margin-left: 2.5%;
+        }
     }
-   
 }
+
+
 
 @font-face {
     font-family: "P900";

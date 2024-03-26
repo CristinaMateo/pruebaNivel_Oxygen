@@ -1,12 +1,15 @@
 @import '../utils/variables.scss';
 
+
+
 #conversor {
     background-color: $lilac;
     border-radius: 21px;
-    width: 717px;
+    width:41.5%;
     height: 193px;
-    margin-left: 36%;
     box-shadow: #00000033 0px 0px 8px 3px;
+    margin-left: 30%;
+    margin-right: 30%;
 
     &>h1 {
         color: #FFFFFF;
@@ -17,12 +20,12 @@
         text-align: left;
     }
 
-    &>#petition {
+    &>.petition {
         display: grid;
         grid-template-columns: 1fr 1fr;
 
 
-        &>#first {
+        &>.first {
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -44,7 +47,7 @@
             }
         }
 
-        &>#second {
+        &>.second {
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -67,7 +70,7 @@
 
     }
 
-    #answer {
+    &>.answer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 24px 80px 24px 38px;
@@ -103,12 +106,39 @@
 
 }
 
-@media screen and (max-width: 460px) {
+
+
+@media screen and (max-width: 900px) {
     #conversor {
-        width: 349px;
+        width: 85%;
         margin: auto;
+        padding-left: 21px;
+
+        &>h1 {
+            padding: 11px 0;
+        }
+
+        &>.petition {
+            
+                grid-template-columns: 1fr;
+
+            &>.first {
+                padding-left: 0;
+            }
+        }
+
+        &>.answer {
+            padding: 19px 0;
+            width: 85%;
+        }
     }
 }
+
+
+
+
+
+
 
 @font-face {
     font-family: "P600";

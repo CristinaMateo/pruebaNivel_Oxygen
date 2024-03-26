@@ -38,11 +38,12 @@ const Convertor = () => {
 
 
   return (
+    
     <article id="conversor">
       <h1>convert</h1>
-      <section id="petition">
+      <section className="petition">
 
-        <article id="first">
+        <article className="first">
         <select name="conversor" id="units" onChange={changeUnits}>
           <option value="km-miles">km &rarr; miles</option>
           <option value="miles-km">miles &rarr; km</option>
@@ -54,7 +55,7 @@ const Convertor = () => {
         <img src="/assets/whiteE.png" alt="white Exchange icon" />
         </article>
 
-        <article id="second">
+        <article className="second">
         <input type="float" onChange={(e) => {
           setInput(e.target.value)
           dispatch(convert({
@@ -67,7 +68,7 @@ const Convertor = () => {
 
       </section>
 
-      <section id="answer">
+      <section className="answer">
         <img src="/assets/heart.png" alt="heart icon" onClick={saveConversion} />
         <span>
         <h2>{result}</h2>
