@@ -46,12 +46,32 @@
 
 #saved-section {
     margin-bottom: 436px;
-    margin-left: 37.786rem;
+    margin-left: 30%;
+    margin-right: 30%;
     width: 51.214rem;
 }
 
+@media screen and (max-width: 1200px) {
+    #savedList {
+        grid-template-columns: 1fr 1fr;
+        width: 80vw;
+        margin-bottom: 230px;
+    }
 
-@media screen and (max-width: 750px) {
+    #saved-section {
+        
+        margin: auto;
+        width: 80vw;
+    }
+
+    .card{
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
     #savedList {
         grid-template-columns: 1fr;
         width: 80vw;
