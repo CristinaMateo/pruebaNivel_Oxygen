@@ -20,6 +20,7 @@
     background-color: $box;
     border-radius: 10px;
     box-shadow: #0000001A 0px 0px 2px 2px;
+    color: $grey;
 }
 
 #saved-section>h5 {
@@ -39,6 +40,8 @@
 
 .cross {
     margin-right: 4px;
+    width: 24px;
+    height: 24px;
 }
 
 #saved-section {
