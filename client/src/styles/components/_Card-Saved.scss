@@ -5,7 +5,7 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 16px;
     grid-row-gap: 21px;
-    width: 100%;
+    width: 51.214rem;
 
 }
 
@@ -46,16 +46,32 @@
 
 #saved-section {
     margin-bottom: 436px;
-    margin-left: 30%;
-    width: 41.5%;
+    margin-left: 37.786rem;
+    width: 51.214rem;
 }
 
 
-
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 750px) {
     #savedList {
         grid-template-columns: 1fr;
+        width: 80vw;
+        margin-bottom: 230px;
+    }
+
+    #saved-section {
+        
+        margin: auto;
+        width: 80vw;
+    }
+
+    .card{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #savedList {
+        grid-template-columns: repeat(1, 1fr);
         width: 90vw;
         margin-bottom: 230px;
     }

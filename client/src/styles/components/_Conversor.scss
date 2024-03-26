@@ -5,11 +5,11 @@
 #conversor {
     background-color: $lilac;
     border-radius: 21px;
-    width:41.5%;
+    width:51.214rem;
     height: 193px;
     box-shadow: #00000033 0px 0px 8px 3px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 37.786rem;
+    margin-right: 37.786rem;
 
     &>h1 {
         color: #FFFFFF;
@@ -108,7 +108,37 @@
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 750px) {
+    #conversor {
+        width: 75%;
+        margin: auto;
+        padding: 6.5%;
+        &>h1{
+            padding: 11px 0;
+        }
+
+        &>.petition{
+            grid-template-columns: 1fr;
+            width:90%;
+            margin: auto;
+
+            &>.first{
+                padding-left: 0;
+                justify-content: space-evenly;
+            }
+            &>.second{
+                justify-content: space-evenly;
+            }
+        }
+        &>.answer {
+            padding: 19px 0;
+            width: 277px;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
     #conversor {
         width: 85%;
         margin: auto;
@@ -133,10 +163,6 @@
         }
     }
 }
-
-
-
-
 
 
 
