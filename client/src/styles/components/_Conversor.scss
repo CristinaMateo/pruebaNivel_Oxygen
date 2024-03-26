@@ -3,8 +3,8 @@
 #conversor {
     background-color: $lilac;
     border-radius: 21px;
-    width: 714px;
-    margin-left: 529px;
+    width: 717px;
+    margin-left: 36%;
     box-shadow: #00000033 0px 0px 8px 3px;
 
     &>h1 {
@@ -56,6 +56,13 @@
         }
     }
 
+}
+
+@media screen and (max-width: 460px) {
+   #conversor{
+    width: 349px;
+    margin: auto;
+   }
 }
 
 @font-face {
