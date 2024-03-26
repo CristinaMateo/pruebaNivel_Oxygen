@@ -29,13 +29,13 @@ header {
     }
 }
 
+
 @media screen and (max-width: 1200px) {
     header >section {
             margin-left: 5%;
         }
     
 }
-
 
 @media screen and (max-width: 900px) {
     header {
@@ -51,5 +51,5 @@ header {
 
 @font-face {
     font-family: "P900";
-    src: url("fonts/Poppins-Black.ttf");
+    src: url("/src/public/fonts/Poppins-Black.ttf");
 }

@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const port = 3000;
 require("dotenv").config();
-const cors = require('cors')
+const path = require('path');
+const cors = require('cors');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -11,7 +12,7 @@ app.use(cors({origin:'*'}))
 
 //middelwares
 const error404 = require('./middlewares/error404.js')
-const morgan = require('./middlewares/morgan')
+const morgan = require('./middlewares/morgan.js')
 
 // Logger
 app.use(morgan(':method :host :status :param[id] - :response-time ms :body'));

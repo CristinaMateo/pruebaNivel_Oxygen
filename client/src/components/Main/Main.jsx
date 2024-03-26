@@ -9,7 +9,7 @@ const Main = () => {
 
   const getSaved = async () =>{
     try{
-      const response = await axios.get('http://localhost:3000/api/saved');
+      const response = await axios.get('/api/saved');
       const data = response.data;
       setSaved(data)
     } catch (error){
