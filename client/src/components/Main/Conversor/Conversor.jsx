@@ -38,9 +38,12 @@ const Convertor = () => {
 
 
   return (
+    
     <article id="conversor">
       <h1>convert</h1>
-      <section id="petition">
+      <section className="petition">
+
+        <article className="first">
         <select name="conversor" id="units" onChange={changeUnits}>
           <option value="km-miles">km &rarr; miles</option>
           <option value="miles-km">miles &rarr; km</option>
@@ -49,9 +52,10 @@ const Convertor = () => {
           <option value="cm-inches">cm &rarr; inches</option>
           <option value="inches-cm">inches &rarr; cm</option>
         </select>
-
         <img src="/assets/whiteE.png" alt="white Exchange icon" />
+        </article>
 
+        <article className="second">
         <input type="float" onChange={(e) => {
           setInput(e.target.value)
           dispatch(convert({
@@ -59,13 +63,17 @@ const Convertor = () => {
             option: factor
           }))
         }} />
-        <span>{unit}</span>
+        <p>{unit}</p>
+        </article>
+
       </section>
 
-      <section id="answer">
+      <section className="answer">
         <img src="/assets/heart.png" alt="heart icon" onClick={saveConversion} />
+        <span>
         <h2>{result}</h2>
         <p>{secUnit}</p>
+        </span>
       </section>
     </article>
   );

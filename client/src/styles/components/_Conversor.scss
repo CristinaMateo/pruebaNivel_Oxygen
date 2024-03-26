@@ -1,69 +1,204 @@
 @import '../utils/variables.scss';
 
+
+
 #conversor {
     background-color: $lilac;
     border-radius: 21px;
-    width: 717px;
-    margin-left: 36%;
+    width: 51.214rem;
+    height: 193px;
     box-shadow: #00000033 0px 0px 8px 3px;
+    margin-left: 30%;
+    margin-right: 30%;
 
     &>h1 {
-        color: $white;
+        color: #FFFFFF;
         font-size: 24px;
+        padding: 24px 38px 21px;
+        margin: 0;
         font-family: P600;
+        text-align: left;
     }
 
-    &>#petition {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: flex-end;
+    &>.petition {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+        &>.first {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 5px;
+            padding-left: 38px;
+            height: 32px;
+
+            &>img {
+                height: 24px;
+                width: 24px;
+            }
+
+            &>select {
+                background-color: $lilac;
+                color: $white;
+                width: 218px;
+                border: none;
+                border-bottom: $white 2px solid;
+            }
+        }
+
+        &>.second {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 11px;
+            height: 32px;
+
+            &>input {
+                background-color: $lilac;
+                color: $white;
+                width: 218px;
+                border: none;
+                border-bottom: $white 2px solid;
+                text-align: right;
+            }
+
+            &>p {
+                color: $white;
+            }
+        }
+
+    }
+
+    &>.answer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 24px 80px 24px 38px;
+        align-items: center;
 
         &>img {
             height: 24px;
             width: 24px;
-        }
-
-        &>select,
-        input {
-            background-color: $lilac;
-            color: $white;
-            width: 218px;
-            border: none;
-            border-bottom: $white 2px solid;
         }
 
         &>span {
-            color: $white;
-        }
-    }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 9px;
+            height: 38px;
+            width: max-content;
+            justify-self: self-end;
 
-    #answer {
-        &>img {
-            height: 24px;
-            width: 24px;
-        }
+            &>h2 {
+                font-family: P700;
+                font-size: 24px;
+                color: $white;
+            }
 
-        &>h2 {
-            font-family: P700;
-            font-size: 24px;
-            color: $white;
-        }
-
-        &>p {
-            color: $white;
-            font-family: P700;
-            font-size: 16px;
+            &>p {
+                color: $white;
+                font-family: P700;
+                font-size: 16px;
+            }
         }
     }
 
 }
 
-@media screen and (max-width: 460px) {
-   #conversor{
-    width: 349px;
-    margin: auto;
-   }
+@media screen and (max-width: 1200px) {
+    #conversor {
+        width: 75%;
+        margin: auto;
+        padding: 6.5%;
+
+        &>h1 {
+            padding: 11px 0;
+        }
+
+        &>.petition {
+            grid-template-columns: 1fr 1fr;
+            width: 90%;
+            margin: auto;
+
+            &>.first {
+                padding-left: 0;
+                justify-content: space-evenly;
+            }
+
+            &>.second {
+                justify-content: space-evenly;
+            }
+        }
+
+        &>.answer {
+            padding: 19px 0;
+            width: 277px;
+            margin: auto;
+        }
+    }
 }
+
+@media screen and (max-width: 800px) {
+    #conversor {
+        width: 75%;
+        margin: auto;
+        padding: 6.5%;
+
+        &>h1 {
+            padding: 11px 0;
+        }
+
+        &>.petition {
+            grid-template-columns: 1fr;
+            width: 90%;
+            margin: auto;
+
+            &>.first {
+                padding-left: 0;
+                justify-content: space-evenly;
+            }
+
+            &>.second {
+                justify-content: space-evenly;
+            }
+        }
+
+        &>.answer {
+            padding: 19px 0;
+            width: 277px;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #conversor {
+        width: 85%;
+        margin: auto;
+        padding-left: 21px;
+
+        &>h1 {
+            padding: 11px 0;
+        }
+
+        &>.petition {
+
+            grid-template-columns: 1fr;
+
+            &>.first {
+                padding-left: 0;
+            }
+        }
+
+        &>.answer {
+            padding: 19px 0;
+            width: 85%;
+        }
+    }
+}
+
+
 
 @font-face {
     font-family: "P600";

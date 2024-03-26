@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const factors = {
     "km-miles": 1/1.609,
     "miles-km": 1.609,
-    "Ft-m": 1/3.281,
+    "FT-m": 1/3.281,
     "m-FT": 3.281,
     "cm-inches": 1/ 2.54,
     "inches-cm": 2.54
