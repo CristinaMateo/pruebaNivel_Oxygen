@@ -12,7 +12,6 @@ const Main = () => {
       const response = await axios.get('/api/saved');
       const data = response.data;
       setSaved(data)
-      console.log(data)
     } catch (error){
       console.error(error)
     }

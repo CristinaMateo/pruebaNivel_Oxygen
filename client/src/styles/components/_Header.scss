@@ -4,12 +4,14 @@
 header {
     box-shadow: #00000040 0px 2px 4px 0px;
     height: 48px;
-    width: 100%;
+    width: 100vw;
+    margin-bottom: 51px;
 
     &>section {
         display: flex;
         align-items: center;
-        margin-left: 529px;
+        margin-left: 30%;
+
 
         &>img {
             width: 32px;
@@ -28,9 +30,24 @@ header {
 }
 
 
-@media screen and (max-width: 390px) {
-   
+@media screen and (max-width: 1200px) {
+    header >section {
+            margin-left: 5%;
+        }
+    
 }
+
+@media screen and (max-width: 900px) {
+    header {
+        margin-bottom: 23px;
+
+        &>section {
+            margin-left: 2.5%;
+        }
+    }
+}
+
+
 
 @font-face {
     font-family: "P900";
